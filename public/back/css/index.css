@@ -1,4 +1,17 @@
 
+* {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration:none;
+}
+
+
 .body-color {
     background-color: #222D32;
 }
@@ -10,3 +23,89 @@
 .mt-150 {
     margin-top:150px;
 }
+
+html, body {
+    height:100%;
+}
+.lt-aside {
+ height:100%;
+ width:180px;
+ background-color: #222D32;
+ position: fixed;
+ top:0px;
+ left:0px;
+ z-index: 999;
+}
+.lt-aside .aside-header {
+    height:50px;
+    width:100%;
+    background-color: #367FA9;
+}
+.lt-aside .aside-header p {
+    line-height:50px;
+    color:#fff;
+}
+.lt-aside .aside-user {
+    padding-top:20px;
+}
+.lt-aside .aside-user img {
+    width:80px;
+    height:80px;
+    border-radius:50px;
+    display:block;
+    margin:0 auto;
+}
+.lt-aside .aside-user span {
+    color:#fff;
+    line-height:40px;
+    font-size: 20px;
+}
+.lt-aside .aside-nav a {
+    color:#fff;
+    display:block;
+    height:40px;
+    line-height:40px;
+    width:100%;
+    padding-left:40px;
+}
+.lt-aside .aside-nav .in {
+    display:none;
+}
+.lt-aside .aside-nav .in a {
+    padding-left:57px;
+}
+
+
+
+
+
+.it-main {
+    height:1500px;
+    width:100%;
+    background-color: pink;
+    padding-left:180px;
+    padding-top:50px;
+}
+.it-main .it-topbar {
+    height:50px;
+    width:100%;
+    background-color: #3C8DBC;
+    position: fixed;
+    top:0px;
+    left:0px; 
+    padding-left:180px;
+}
+.it-main .it-topbar i {
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    width:50px;
+    font-size: 20px;
+    color:#fff;
+}
+.main-nav {
+    margin-top:20px;
+}
+
+
+
