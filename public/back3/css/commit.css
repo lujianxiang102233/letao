@@ -7,6 +7,15 @@
 body {
     background-color: #222D32;
 }
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration:none;
+}
+.white {
+    background-color:#fff;
+}
 .panel-title {
     height:40px;
     line-height:40px;
@@ -14,3 +23,60 @@ body {
 .mar-150 {
     margin-top:150px;
 }
+
+html, body {
+    height:100%;
+}
+.lt-aside {
+    height:100%;
+    width:180px;
+    background-color: #222D32;
+}
+.lt-aside .aside-header {
+    height:50px;
+    width:100%;
+    background-color: #367FA9;
+}
+.lt-aside .aside-header p {
+    color:#fff;
+    line-height:50px;
+    font-size: 20px;
+    text-align:center;
+}
+.lt-aside .aside-user .in {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.lt-aside .aside-user .in img {
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    margin:0 auto;
+    display:block;
+}
+.lt-aside .aside-user .in span {
+    color:#fff;
+    line-height:40px;
+    font-size: 20px;
+}
+
+
+.lt-aside .aside-nav ul li a {
+    color:#fff;
+    line-height:40px;
+    display:block;
+    padding-left:40px;
+    border-left:3px solid transparent;
+}
+.lt-aside .aside-nav ul li a.current {
+    border-left:3px solid #006699;
+    background-color:#1D1F21;
+}
+.lt-aside .aside-nav .next-list {
+    display:none;
+}
+.lt-aside .aside-nav .next-list a {
+    padding-left:58px;
+}
+
+
