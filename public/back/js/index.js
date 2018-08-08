@@ -84,17 +84,3 @@ $('#form').on('success.form.bv', function (e) {
 })
 
 
-
-//进度条
-$(document).ajaxStart(function(){
-    //console.log('请求开始');
-    NProgress.start();
-
-})
-
-$(document).ajaxStop(function(){
-    setTimeout(function(){
-        //console.log('请求结束');
-        NProgress.done();
-    },1000);
-})
