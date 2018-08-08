@@ -86,9 +86,7 @@ html, body {
     border-left:3px solid #006699;
     background-color:#1D1F21;
 }
-.lt-aside .aside-nav .next-list {
-    display:none;
-}
+
 .lt-aside .aside-nav .next-list a {
     padding-left:58px;
 }
