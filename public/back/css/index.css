@@ -71,10 +71,14 @@ html, body {
     line-height:40px;
     width:100%;
     padding-left:40px;
+    border-left:3px solid transparent;
 }
-.lt-aside .aside-nav .in {
-    display:none;
+.lt-aside .aside-nav a.current {
+    border-left:3px solid #006699;
+    background-color:#1D1F21;
 }
+
+
 .lt-aside .aside-nav .in a {
     padding-left:57px;
 }
