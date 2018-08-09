@@ -90,7 +90,6 @@ html, body {
 .it-main {
     height:1500px;
     width:100%;
-    background-color: pink;
     padding-left:180px;
     padding-top:50px;
     transition:all 1s;
@@ -127,6 +126,13 @@ html, body {
 .modal-body p {
     color: #A94442;
 }
+
+
+.echarts_1,
+.echarts_2 {
+    height:400px;
+    width:48%;
+  }
 
 
 
