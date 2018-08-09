@@ -23,7 +23,9 @@ a:active {
 .mt-150 {
     margin-top:150px;
 }
-
+.addBtn {
+    margin-bottom:20px;
+}
 html, body {
     height:100%;
 }
