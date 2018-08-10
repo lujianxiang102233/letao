@@ -46,10 +46,10 @@ $('tbody').on('click','.btn',function(){
     $('#amend').modal('show');
    currentId = $(this).parent().data('id');
     isDelete = $(this).hasClass('btn-danger') ? 0 : 1 ;
-    console.log(currentId);
-    console.log(isDelete);
-    console.log($(this));
-    console.log($(this).parent());
+    // console.log(currentId);
+    // console.log(isDelete);
+    // console.log($(this));
+    // console.log($(this).parent());
 })
 
 //点击模态框的确认按钮，tbody里面的状态改变

@@ -11,7 +11,7 @@ $(function() {
    * */
 
   // 检验插件初始化
-
+  $('#form').bootstrapValidator({
 
     // 配置图标
     feedbackIcons: {
