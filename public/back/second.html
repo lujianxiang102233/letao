@@ -13,7 +13,7 @@
 <body>
 
     <div class="lt-aside">
-        <div class="aside-header"><p class="text-center">黑马19期</p></div>
+        <div class="aside-header"><p class="text-center">黑马24期</p></div>
         <div class="aside-user text-center">
             <img src="images/01.jpg" alt="">
             <span >超级管理员</span>
@@ -113,45 +113,57 @@
           </div><!-- /.modal -->
 
           <!-- 添加分类模态框 -->
-          <div class="modal fade" id="addModal">
+          <div class="modal fade" tabindex="-1" id="addModal">
                 <div class="modal-dialog modal-sm">
                   <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
-                      <h4 class="modal-title">温馨提示</h4>
-                    </div>
-                    <div class="modal-body">
-                      <div class="form-group">
+                    <form id="addForm">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                            <h4 class="modal-title">添加分类</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
                             <div class="dropdown">
-                                <button id="dLabel" type="button" data-toggle="dropdown" class="btn btn-default">
-                                请选择一级分类
-                                <span class="caret"></span>
+                                <button type="button" data-toggle="dropdown" class="btn btn-default">
+                                    <span class="categoryName">请选择一级分类</span>
+                                    <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                ...
+                                <ul class="dropdown-menu">
+                               
                                 </ul>
                             </div>
-                      </div>
+                                <input type="hidden"  name="categoryId">
+                                <input type="hidden" name="hot" value="1">
+                            </div>
 
-                      <div class="form-group">
-                            <input type="text" class="form-control" placeholder="请输入二级分类">
-                      </div>
+                            <div class="form-group">
+                                <input type="text" name="brandName" class="form-control" placeholder="请输入二级分类">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="fileupload" class="btn btn-default">上传图片</label>
+                                <input type="file" id="fileupload" name="pic1" data-url="/category/addSecondCategoryPic" style="display:none;">
+                            </div>
 
-                      <div class="form-group">
-                          
-                      </div>
-                    </div>
-                    <div class="modal-footer">
+                            <div class="form-group">
+                                <img src="images/none.png" alt="" width="100" class="uploadImg"> 
+                                <input type="hidden" name="brandLogo">
+                            </div>
+                        
+                        </div>
+                    
+                        <div class="modal-footer">
                       <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                      <button type="button" class="btn btn-primary out">退出</button>
-                    </div>
+                      <button type="submit" class="btn btn-primary">确认</button>
+                        </div>
+                    </form>
                   </div>
                 </div>
               </div>
 
           
 
-
+        <!-- 表格渲染 -->
           <script type="text/html" id="tmp">
             {{ each rows v i }}
             <tr>
@@ -164,12 +176,26 @@
             </tr>
             {{ /each }}
         </script>
+
+
+        <!-- 下拉列表渲染 -->
+        <script type="text/html" id="dropdownTpl">
+            {{ each rows v i }}
+            <li><a href="#" data-id="{{ v.id }}">{{ v.categoryName }}</a></li>
+            {{ /each \}}
+        </script>
+
+
+
+
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
     <script src="lib/nprogress/nprogress.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
     <script src="lib/bootstrap-paginator/bootstrap-paginator.min.js"></script>
+    <script src="lib/jquery-fileupload/jquery.ui.widget.js"></script>
+    <script src="lib/jquery-fileupload/jquery.fileupload.js"></script>
     <script src="js/common.js"></script>
     <script src="js/second.js"></script>
   
