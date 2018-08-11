@@ -1,0 +1,49 @@
+.lt-main .lt-left {
+    width:90px;
+    height:100%;
+    float:left;
+    position: relative;
+}
+
+.lt-main .lt-left ul li a{
+    display:block;
+    width:90px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    background-color: #ccc;
+}
+.lt-main .lt-left ul li a.current {
+    border-right:none;
+    background-color: #fff;
+}
+.lt-main .lt-right {
+    height:100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.lt-main .lt-right ul li {
+    width:33.33%;
+    height:81px;
+    float:left;
+}
+.lt-main .lt-right ul li a {
+    width:100%;
+    height:100%;
+    display:block;
+}
+.lt-main .lt-right ul li a img {
+    width:70px;
+    height:50px;
+    display:block;
+    margin:0 auto;
+}
+.lt-main .lt-right ul li a p {
+    text-align:center;
+}
+
+
+
