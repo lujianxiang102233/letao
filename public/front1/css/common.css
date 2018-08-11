@@ -1,0 +1,102 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+html, body {
+    height:100%;
+}
+body {
+    background-color: #999;
+}
+.lt-container {
+    height:100%;
+    width:100%;
+    max-width:640px;
+    min-width:320px;
+    background-color: yellow;
+    margin:0 auto;
+    position: relative;
+    padding-top:45px;
+    padding-bottom:55px;
+}
+.lt-container .lt-header {
+    height:45px;
+    width:100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    background-color: blue;
+    padding-left:45px;
+    padding-right:45px;
+}
+.lt-container .lt-header .icon-left,
+.lt-container .lt-header .icon-right {
+    height:45px;
+    line-height:45px;
+    width:45px;
+    text-align:center;
+    position: absolute;
+    top:0;
+    background-color:red;
+    color:#fff;
+}
+.lt-container .lt-header .icon-left {
+    left:0;
+}
+.lt-container .lt-header .icon-right  {
+    right:0;
+}
+.lt-container .lt-header h4 {
+    height:45px;
+    line-height:45px;
+    text-align:center;
+    box-sizing:border-box;
+    margin:0;
+    color:#fff;
+    font-weight:normal;
+}
+
+
+.lt-container .lt-main {
+    height:100%;
+    width:100%;
+    position: relative;
+}
+
+
+
+
+.lt-container .lt-foot {
+    height:55px;
+    width:100%;
+    background-color: #006699;
+    position: absolute;
+    bottom:0;
+    overflow:hidden;
+} 
+.lt-container .lt-foot ul li {
+    float:left;
+    width:25%;
+    height:100%;
+}
+.lt-container .lt-foot ul li a {
+    display:block;
+    width:100%;
+    height:100%;
+    text-align:center;
+    color:#fff;
+}
+.lt-container .lt-foot ul li a.current {
+    color:orange;
+}
+
+.lt-container .lt-foot ul li a i {
+    margin-top:10px;
+}
+.lt-container .lt-foot ul li a p {
+    color:#fff;
+}
+.lt-container .lt-foot ul li a.current p {
+    color:orange;
+}
