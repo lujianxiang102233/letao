@@ -34,6 +34,7 @@ $(function() {
 
       // 如果需要排序, 需要将参数添加在params中
       params[ sortName ] = sortValue;
+      console.log( params[ sortName ]);
     }
 
 

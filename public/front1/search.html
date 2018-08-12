@@ -20,7 +20,7 @@
             <a href="javascript:history.go(-1);" class="icon-left">
                 <i class="mui-icon mui-icon-back"></i>
             </a>
-            <h4>乐淘云购</h4>
+            <h4>搜索中心</h4>
            
         </div>
 
@@ -32,28 +32,9 @@
                        <button class="btn mui-btn-primary search-btn">搜索</button>
                    </div>
 
-                   <div class="lt-history">
-                       <div class="title">
-                           <span class="mui-pull-left">搜索历史</span>
-                           <span class="mui-pull-right"><i class="fa fa-trash"></i>清空记录</span>
-                       </div>
-                       <div class="content">
-                           <ul>
-                               <li>
-                                   <a href="#" class="mui-pull-left">社会鹏</a>
-                                   <i class="mui-icon mui-icon-closeempty mui-pull-right"></i>
-                                </li>
-                                <li>
-                                    <a href="#" class="mui-pull-left">社会鹏</a>
-                                    <i class="mui-icon mui-icon-closeempty mui-pull-right"></i>
-                                </li>
-                                <li>
-                                    <a href="#" class="mui-pull-left">社会鹏</a>
-                                    <i class="mui-icon mui-icon-closeempty mui-pull-right"></i>
-                                </li>
-                           </ul>
-                       </div>
-                   </div>
+                <div class="lt-history">
+                   
+                </div>
                 </div>
             </div>
 
@@ -90,27 +71,34 @@
 
     </div>
 
-    <!--  class="current" -->
-    <script type="text/html" id="leftTmp">
-        {{ each rows v i }}
-        <li><a href="#" class="{{ i === 0 ? 'current': ''}}" data-id="{{ v.id }}">{{ v.categoryName }}</a></li>
-        {{ /each }}
-    </script>
-
-
-    <script type="text/html" id="rightTmp">
-        {{ if rows.length == 0}}
-        <p>没有相关信息</p>
+   <!-- 模板引擎，渲染历史记录 -->
+   <script  type="text/html" id="historyTpl">
+    {{ if list.length > 0 }}
+        <div class="title">
+            <span class="mui-pull-left">搜索历史</span>
+            <span class="mui-pull-right btn-del"><i class="fa fa-trash"></i>清空记录</span>
+        </div>
+        <div class="content">
+            <ul>
+                {{ each list v i }}
+                <li>
+                    <a href="#" class="mui-pull-left" >{{ v }}</a>
+                    <i class="mui-icon mui-icon-closeempty mui-pull-right i-del" data-index="{{ i }}"></i>
+                 </li>
+                 {{ /each }}
+            </ul>
+        </div>
+        {{ else}}
+        <p style="padding-left:10px;">没有更多历史记录</p>
         {{ /if }}
-        {{ each rows v i }}
-        <li><a href="#"><img src="{{ v.brandLogo}}" alt=""><p>{{ v.brandName }}</p></a></li>
-        {{ /each }}
-    </script>
-    <script src="lib/zepto/zepto.min.js"></script>
-    <script src="lib/mui/js/mui.js"></script>
-    <script src="lib/artTemplate/template-web.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/search.js"></script>
+      
+   </script>
+
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./lib/mui/js/mui.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/search.js"></script>
 </body>
 
 </html>
