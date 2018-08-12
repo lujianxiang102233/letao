@@ -70,6 +70,7 @@ $('.lt-sort a[data-type]').click(function(){
    if($(this).hasClass('current')){
     $(this).find('i').toggleClass('fa-angle-down').toggleClass('fa-angle-up');
    }else {
+       //没有就添加类并排它
     $(this).addClass('current').siblings().removeClass('current');
    }
   
