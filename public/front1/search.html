@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
     <link rel="stylesheet" href="lib/mui/css/mui.min.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/search.css">
     <link rel="icon" href="favicon.ico">
     <title>Document</title>
 </head>
@@ -17,33 +17,43 @@
     <div class="lt-container">
 
         <div class="lt-header">
-            <a href="index.html" class="icon-left">
-                <i class="fa fa-home"></i>
+            <a href="javascript:history.go(-1);" class="icon-left">
+                <i class="mui-icon mui-icon-back"></i>
             </a>
             <h4>乐淘云购</h4>
-            <a href="search.html" class="icon-right">
-                <i class="fa fa-search"></i>
-            </a>
+           
         </div>
 
         <div class="lt-main">
-            <div class="lt-left">
-                <div class="mui-scroll-wrapper">
-                    <div class="mui-scroll">
-                        <ul class="leftUl">
-                           
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="lt-right">
-                <div class="mui-scroll-wrapper">
-                    <div class="mui-scroll">
-                        <ul class="rightUl">
-                        
-                          
-                        </ul>
-                    </div>
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                   <div class="lt-search">
+                       <input type="text" placeholder="请输入搜索关键字" class="search-input">
+                       <button class="btn mui-btn-primary search-btn">搜索</button>
+                   </div>
+
+                   <div class="lt-history">
+                       <div class="title">
+                           <span class="mui-pull-left">搜索历史</span>
+                           <span class="mui-pull-right"><i class="fa fa-trash"></i>清空记录</span>
+                       </div>
+                       <div class="content">
+                           <ul>
+                               <li>
+                                   <a href="#" class="mui-pull-left">社会鹏</a>
+                                   <i class="mui-icon mui-icon-closeempty mui-pull-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#" class="mui-pull-left">社会鹏</a>
+                                    <i class="mui-icon mui-icon-closeempty mui-pull-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#" class="mui-pull-left">社会鹏</a>
+                                    <i class="mui-icon mui-icon-closeempty mui-pull-right"></i>
+                                </li>
+                           </ul>
+                       </div>
+                   </div>
                 </div>
             </div>
 
@@ -58,7 +68,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="category.html" class="current">
+                    <a href="category.html">
                         <i class="fa fa-bars"></i>
                         <p>分类页</p>
                     </a>
@@ -80,7 +90,7 @@
 
     </div>
 
-<!--  class="current" -->
+    <!--  class="current" -->
     <script type="text/html" id="leftTmp">
         {{ each rows v i }}
         <li><a href="#" class="{{ i === 0 ? 'current': ''}}" data-id="{{ v.id }}">{{ v.categoryName }}</a></li>
@@ -100,7 +110,7 @@
     <script src="lib/mui/js/mui.js"></script>
     <script src="lib/artTemplate/template-web.js"></script>
     <script src="js/common.js"></script>
-    <script src="js/category.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>
