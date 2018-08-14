@@ -144,8 +144,8 @@ $(function() {
 
     // 遍历所有被选中的复选框, 将价格加起来, 价格=单价*数量
     $('.ck:checked').each(function( index, element ) {
-      var price = $(this).data("price");
-      var num = $(this).data("num");
+      var price = $(element).data("price");
+      var num = $(element).data("num");
 
       totalPrice += price * num;
     });

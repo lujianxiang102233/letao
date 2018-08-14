@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="lt-container">
+
+        <div class="lt-header">
+            <a href="#" class="icon-left">
+                <i class="mui-icon mui-icon-back"></i>
+            </a>
+            <h4>登录</h4>
+            
+        </div>
+
+        <div class="lt-main">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    
+                        <form class="mui-input-group" id="form">
+                            <div class="mui-input-row">
+                                <label>用户名</label>
+                            <input type="text" class="mui-input-clear" placeholder="请输入用户名" id="username">
+                            </div>
+                            <div class="mui-input-row">
+                                <label>密　码</label>
+                                <input type="password" class="mui-input-password" placeholder="请输入密码" id="password">
+                            </div>
+                            <div class="mui-button-row">
+                                <button type="button" class="mui-btn mui-btn-primary btn-confirm" >确认</button>
+                                <button type="button" class="mui-btn mui-btn-danger" >取消</button>
+                            </div>
+                        </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 订单总金额 -->
+        <div class="lt-order">
+            <div class="mui-pull-left order-left">订单总金额 ¥<span class="totalPrice">0.00</span></div>
+            <div class="mui-pull-right order-right">生成订单</div>
+        </div>
+        <!-- 底部 -->
+        <div class="lt-foot">
+            <ul>
+                <li>
+                    <a href="#" >
+                        <i class="fa fa-home"></i>
+                        <p>首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <i class="fa fa-bars"></i>
+                        <p>分类页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-shopping-cart"></i>
+                        <p>购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        <p>用户中心</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+ 
+
+    <script src="lib/zepto/zepto.min.js"></script>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
