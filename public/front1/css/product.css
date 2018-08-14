@@ -1,0 +1,79 @@
+.lt_go_cart {
+    background-color: #EFEFF4;
+    height:55px;
+    position: absolute;
+    bottom:0px;
+    width:100%;
+    border-top:1px solid red;
+    overflow: hidden;
+}
+.lt_go_cart .go-cart a{
+   display:block;
+   width:95px;
+   height:55px;
+   line-height:55px;
+   padding-left:10px;
+}
+.lt_go_cart .add-cart {
+    height:55px;
+    margin-top:11px;
+}
+
+
+
+
+.lt-proName {
+ border-top:1px solid #ccc;
+}
+.lt-proName p {
+    color:#000;
+    font-weight: bold;
+    font-size: 16px;
+    padding:10px;
+}
+
+.lt-price {
+    border-top:1px solid #ccc;
+    padding:10px;
+}
+.lt-price .nowPrice {
+    color:red;
+}
+.lt-price .oldPrice {
+    text-decoration:line-through;
+    color:#666;
+    font-size: 12px;
+}
+
+
+.lt-size {
+    padding:10px;
+}
+.lt-size span {
+    width:25px;
+    height:25px;
+    line-height:25px;
+    text-align:center;
+    border:1px solid #ccc;
+    font-size: 12px;
+    display:inline-block;
+    margin-bottom:4px;
+}
+.lt-size span.current {
+    background-color: orange;
+    color:#fff;
+}
+
+
+.lt-num {
+    border-top:1px solid #ccc;
+    padding:10px;
+}
+.lt-num .surplus {
+    font-size: 12px;
+}
+
+.lt-describe {
+    border-top:1px solid #ccc;
+    padding:10px;
+}

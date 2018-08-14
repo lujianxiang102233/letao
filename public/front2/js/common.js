@@ -45,11 +45,3 @@ function getSearch( name ) {
 }
 
 
-function getHistory(){
-  var jsonArr = localStorage.getItem('search-list') || '[]';
-  var arr = JSON.parse(jsonArr);
-  return arr;
-}
-
-
-

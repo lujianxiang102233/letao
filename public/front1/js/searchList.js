@@ -1,4 +1,5 @@
 $(function(){
+   
  var key = getSearch('key');
  //console.log(key);
  $('.search-input').val(key);
@@ -7,6 +8,7 @@ $(function(){
  render();
 
  function render(){
+    $('.lt-product').html('<div class="lazy"></div>');
     var params = {};
     params.proName = $('.search-input').val();
     params.page = 1;
@@ -23,18 +25,19 @@ $(function(){
     }
    
     
+   setTimeout(function(){
     $.ajax({
         type: 'get',
         url: '/product/queryProduct',
         data: params,
         success: function( info ){
-            //console.log( info );
+            console.log( info );
            //渲染到产品模块
            var proStr = template('proTmp', info);
-           $('.proUl').html(proStr);
-            
+           $('.lt-product').html(proStr);
         }
     })
+   },500)
  }
 
 
@@ -75,6 +78,13 @@ $('.lt-sort a[data-type]').click(function(){
    }
   
   render();
+})
+
+
+//点击立即购物，跳转到商品详情页面
+$('.lt-product').on('click','.proUl a',function(){
+    var id = $(this).data('id');
+  console.log(id);
 })
 
 
